@@ -10,4 +10,8 @@ class Grupo extends Model {
     public function alumnos() {
         return $this->hasMany(Alumno::class);
     }
+
+    public function clases() {
+        return $this->hasMany(Clase::class);
+    }
 }

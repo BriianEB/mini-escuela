@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Materia extends Model {
-
+    
+    public function clases() {
+        return $this->hasMany(Clase::class);
+    }
 }
